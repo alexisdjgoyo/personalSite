@@ -80,7 +80,7 @@
                             eiusmod tempor incididunt ut labore et doloremagna aliqua
                         </h2> --}}
 
-                    <a href="/assets/docs/cv.pdf" class="button" target="_blank">
+                    <a href="{{asset('/assets/docs/cv.pdf')}}" class="button" target="_blank">
                         Descarga mi CV&emsp;<i class="fas fa-download fa-lg"></i>
                     </a>
                 </div>
