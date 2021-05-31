@@ -11,7 +11,7 @@
     <!-- Bulma Version 0.9.0-->
     <link rel="stylesheet" href="{{asset('/assets/css/bulma.css')}}" />
     <link rel="stylesheet" type="text/css" href="{{asset('/assets/css/custom.css')}}" />
-    <link rel="stylesheet" type="text/css" href="{{asset('/assets/plugins/fontawesome/css/all.css')}}" />
+    <link rel="stylesheet" type="text/css" href="{{asset('/assets/plugins/fontawesome/css/all.css')}}" media="all"/>
     <link rel="icon" type="image/png" href="{{asset('/assets/img/favicon.png')}}" />
 </head>
 
