@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="Hola, mi nombre es Alexis Goyo, Ingeniero en Informática y desarrollador web, bienvenido a mi sitio web donde te hablaré un poco sobre mi experiencia." />
 
-    <title>Alexis Goyo</title>
+    <title>Alexis Goyo | Hello World!</title>
     <!-- Bulma Version 0.9.0-->
     <link rel="stylesheet" href="{{asset('/assets/css/bulma.css')}}" />
     <link rel="stylesheet" type="text/css" href="{{asset('/assets/css/custom.css')}}" />
