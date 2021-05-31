@@ -63,7 +63,7 @@
     <!-- Begin Header -->
     <div class="header-wrapper" id="home">
         <!-- Begin Hero -->
-        <section class="hero is-large" style="background: url({{asset('/assets/img/background.jpg')}});background-position: center;
+        <section class="hero is-small" style="background: url({{asset('/assets/img/background.jpg')}});background-position: center;
         background-size: cover;">
             <!-- Begin Mobile Nav -->
             <nav class="navbar is-transparent is-hidden-desktop">
