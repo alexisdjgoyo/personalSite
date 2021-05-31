@@ -5,14 +5,40 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Hola, mi nombre es Alexis Goyo, Ingeniero en Informática y desarrollador web, bienvenido a mi sitio web donde te hablaré un poco sobre mi experiencia." />
+    <meta name="description"
+        content="Hola, mi nombre es Alexis Goyo, Ingeniero en Informática y desarrollador web, bienvenido a mi sitio web donde te hablaré un poco sobre mi experiencia." />
 
     <title>Alexis Goyo | Hello World!</title>
-    <!-- Bulma Version 0.9.0-->
-    <link rel="stylesheet" href="{{asset('/assets/css/bulma.css')}}" />
-    <link rel="stylesheet" type="text/css" href="{{asset('/assets/css/custom.css')}}" />
-    <link rel="stylesheet" type="text/css" href="{{asset('/assets/plugins/fontawesome/css/all.css')}}" media="all"/>
     <link rel="icon" type="image/png" href="{{asset('/assets/img/favicon.png')}}" />
+
+    <style type="text/css">
+        body.preloader-site {
+            overflow: hidden;
+        }
+
+        .preloader-wrapper {
+            height: 100%;
+            width: 100%;
+            background: #1f2c6c;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 9999999;
+        }
+
+        .preloader-wrapper .preloader {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            width: 120px;
+        }
+    </style>
+    <!-- Bulma Version 0.9.0-->
+    <link rel="preload" href="{{asset('/assets/css/bulma.css')}}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="{{asset('/assets/css/custom.css')}}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="{{asset('/assets/plugins/fontawesome/css/all.css')}}" as="style" onload="this.onload=null;this.rel='stylesheet'">
 </head>
 
 <body>
