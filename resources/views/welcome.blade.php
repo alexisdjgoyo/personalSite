@@ -28,7 +28,8 @@
                         el desarrollo de soluciones informáticas.
                     </p>
                     <p align="justify">
-                        &emsp;&emsp;Aficionado del mundo de linux y el software libre, utilizando actualmente Elementary OS como sistema operativo principal.
+                        &emsp;&emsp;Aficionado del mundo de linux y el software libre, utilizando actualmente Elementary
+                        OS como sistema operativo principal.
                     </p>
                     {{-- <br />
                         <div class="is-divider"></div>
@@ -80,7 +81,7 @@
                             eiusmod tempor incididunt ut labore et doloremagna aliqua
                         </h2> --}}
 
-                    <a href="{{asset('/assets/docs/cv.pdf')}}" class="button" target="_blank">
+                    <a href="{{asset('/assets/docs/cv.pdf')}}" class="button is-large" target="_blank">
                         Descarga mi CV&emsp;<i class="fas fa-download fa-lg"></i>
                     </a>
                 </div>
@@ -88,81 +89,60 @@
         </div>
     </div>
     <!-- Begin Services Content -->
-    <div class="section-color services" id="services">
+    <div class="section-color services" id="my-work">
+    {{-- <div class="section-color services" id="services"> --}}
         <div class="container">
             <div class="columns is-multiline">
                 <div class="column is-12 about-me" data-aos="fade-in" data-aos-easing="linear">
-                    <h1 class="title has-text-centered section-title">Services</h1>
-
+                    <h1 class="title has-text-centered section-title">¿A qué me dedico?</h1>
                     <h2 class="subtitle">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                        eiusmod tempor incididunt ut labore et dolore magna aliqua
+                        {{-- <p align="center">
+                            A continuación describo algunas de las funciones que he ejercido durante mi carrera
+                            profesional.
+                        </p> --}}
                     </h2>
                     <br />
                 </div>
                 <div class="columns is-12">
                     <div class="column is-4 has-text-centered" data-aos="fade-in" data-aos-easing="linear">
-                        <i class="fad fa-meteor fa-3x"></i>
-                        <hr />
-                        <h2>
+                        <i class="fas fa-laptop-code fa-3x"></i>
+                        <hr/>
+                        <h2 class="title has-text-centered section-title" style="padding-bottom: 0px">Desarrollo de aplicaciones Web</h2>
+                        {{-- <h2>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                             do eiusmod tempor incididunt ut labore et dolore magna aliqua
-                        </h2>
+                        </h2> --}}
                     </div>
                     <div class="column is-4 has-text-centered" data-aos="fade-in" data-aos-easing="linear">
-                        <i class="fas fa-paint-brush fa-3x"></i>
+                        <i class="fas fa-mobile-alt fa-3x"></i>
                         <hr />
-                        <h2>
+                        <h2 class="title has-text-centered section-title" style="padding-bottom: 0px">Desarrollo de aplicaciones móvil/híbrido</h2>
+                        {{-- <h2>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                             do eiusmod tempor incididunt ut labore et dolore magna aliqua
-                        </h2>
+                        </h2> --}}
                     </div>
                     <div class="column is-4 has-text-centered" data-aos="fade-in" data-aos-easing="linear">
                         <i class="fas fa-rocket fa-3x"></i>
                         <hr />
-                        <h2>
+                        <h2 class="title has-text-centered section-title" style="padding-bottom: 0px">Despliegue de aplicaciones web/móvil</h2>
+                        {{-- <h2>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                             do eiusmod tempor incididunt ut labore et dolore magna aliqua
-                        </h2>
+                        </h2> --}}
                     </div>
                 </div>
                 <hr />
-                <div class="columns is-12">
-                    <div class="column is-4 has-text-centered" data-aos="fade-in" data-aos-easing="linear">
-                        <i class="fas fa-upload fa-3x"></i>
-                        <hr />
-                        <h2>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                            do eiusmod tempor incididunt ut labore et dolore magna aliqua
-                        </h2>
-                    </div>
-                    <div class="column is-4 has-text-centered" data-aos="fade-in" data-aos-easing="linear">
-                        <i class="fas fa-bus fa-3x"></i>
-                        <hr />
-                        <h2>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                            do eiusmod tempor incididunt ut labore et dolore magna aliqua
-                        </h2>
-                    </div>
-                    <div class="column is-4 has-text-centered" data-aos="fade-in" data-aos-easing="linear">
-                        <i class="fas fa-code fa-3x"></i>
-                        <hr />
-                        <h2>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                            do eiusmod tempor incididunt ut labore et dolore magna aliqua
-                        </h2>
-                    </div>
-                </div>
             </div>
         </div>
     </div>
     <!-- End Services Content -->
     <!-- Begin Skills Content -->
-    <div class="section-light skills" id="skills">
+    {{-- <div class="section-light skills" id="skills">
         <div class="container">
             <div class="columns is-multiline">
                 <div class="column is-12 about-me">
-                    <h1 class="title has-text-centered section-title">Skills</h1>
+                    <h1 class="title has-text-centered section-title">Mis Habilidades</h1>
                 </div>
                 <div class="column is-6" data-aos="fade-in" data-aos-easing="linear">
                     <h1>Adobe Experience Design</h1>
@@ -186,10 +166,10 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> --}}
     <!-- End Skills Content -->
     <!-- Begin Work Content -->
-    <div class="section-dark my-work" id="my-work">
+    {{-- <div class="section-dark my-work" id="my-work">
         <div class="container">
             <div class="columns is-multiline" data-aos="fade-in" data-aos-easing="linear">
                 <div class="column is-12">
@@ -245,7 +225,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> --}}
     <!-- End Work Content -->
     <!-- Begin Contact Content -->
     <div class="section-light contact" id="contact">
@@ -253,39 +233,48 @@
             <div class="columns is-multiline" data-aos="fade-in-up" data-aos-easing="linear">
                 <div class="column is-12 about-me">
                     <h1 class="title has-text-centered section-title">
-                        Get in touch
+                        Contacto
                     </h1>
                 </div>
-                <div class="column is-8 is-offset-2">
-                    <form action="https://formspree.io/email@example.com" method="POST">
+                <div class="column is-10 is-offset-1">
+                    <form action="#" method="POST">
                         <div class="field">
-                            <label class="label">Name</label>
+                            <label class="label">Nombre</label>
                             <div class="control has-icons-left">
-                                <input class="input" type="text" placeholder="Ex. Jane Smith" name="Name" />
+                                <input class="input" type="text" placeholder="" name="Name" />
                                 <span class="icon is-small is-left">
                                     <i class="fas fa-user"></i>
                                 </span>
                             </div>
                         </div>
                         <div class="field">
-                            <label class="label">Email</label>
+                            <label class="label">Correo</label>
                             <div class="control has-icons-left">
-                                <input class="input" type="email" placeholder="Ex. hello@arctheme.com" name="Email" />
+                                <input class="input" type="email" placeholder="" name="Email" />
                                 <span class="icon is-small is-left">
                                     <i class="fas fa-envelope"></i>
                                 </span>
                             </div>
                         </div>
                         <div class="field">
-                            <label class="label">Message</label>
+                            <label class="label">Asunto</label>
+                            <div class="control has-icons-left">
+                                <input class="input" type="text" placeholder="" name="Name" />
+                                <span class="icon is-small is-left">
+                                    <i class="fas fa-user"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label class="label">Mensaje</label>
                             <div class="control">
                                 <textarea class="textarea" placeholder="Textarea" name="Message"></textarea>
                             </div>
                         </div>
                         <div class="field">
                             <div class="control ">
-                                <button class="button submit-button">
-                                    Submit&nbsp;&nbsp;
+                                <button class="button submit-button" disabled="true">
+                                    Enviar&nbsp;&nbsp;
                                     <i class="fas fa-paper-plane"></i>
                                 </button>
                             </div>

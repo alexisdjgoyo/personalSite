@@ -38,7 +38,8 @@
     <!-- Begin Header -->
     <div class="header-wrapper" id="home">
         <!-- Begin Hero -->
-        <section class="hero is-large" style="background: url({{asset('/assets/img/background.jpg')}})">
+        <section class="hero is-large" style="background: url({{asset('/assets/img/background.jpg')}});background-position: center;
+        background-size: cover;">
             <!-- Begin Mobile Nav -->
             <nav class="navbar is-transparent is-hidden-desktop">
                 <!-- Begin Burger Menu -->
@@ -53,7 +54,7 @@
                 <div id="mobile-nav" class="navbar-menu" style="">
                     <div class="navbar-end">
                         <div class="navbar-item">
-                            <a class="navbar-item" href="#home">
+                            <a class="navbar-item" href="/">
                                 Inicio
                             </a>
                         </div>
@@ -107,8 +108,8 @@
                     <div class="columns">
                         <div class="column is-12 hero-menu-desktop has-text-centered">
                             <ul>
-                                <li class="is-active">
-                                    <a href="#home">Inicio</a>
+                                <li class="is-active" id="home-link">
+                                    <a href="/">Inicio</a>
                                 </li>
                                 <li>
                                     <a href="#about-me">Sobre mí</a>

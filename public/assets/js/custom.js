@@ -11,15 +11,7 @@ $(document).ready(function() {
 });
 
 // // Smooth Anchor Scrolling
-// $(document).on("click", '#toTop', function (event) {
-//     event.preventDefault();
-//     $("html, body").animate(
-//         {
-//             scrollTop: $($.attr(this, "href")).offset().top,
-//         },
-//         500
-//     );
-// });
+
 
 $(document).on("click", 'a[href^="#"]', function(event) {
     event.preventDefault();
@@ -31,14 +23,21 @@ $(document).on("click", 'a[href^="#"]', function(event) {
     );
     $('a[href^="#"]').each(function(i) {
         $(this).parent().removeClass("is-active");
-        // if ($(this).id === 'toTop') {
-        //     console.log('palcielo');
-        // } else {
-
-        // }
     });
+    $('#home-link').removeClass("is-active");
     $(this).parent().addClass("is-active");
   });
+
+  $(document).on("click", '#toTop', function (event) {
+    event.preventDefault();
+    $("html, body").animate(
+        {
+            scrollTop: $($.attr(this, "href")).offset().top,
+        },
+        500
+    );
+    $('#home-link').addClass("is-active");
+});
 
 // When the user scrolls down 20px from the top of the document, show the scroll up button
 window.onscroll = function () {
