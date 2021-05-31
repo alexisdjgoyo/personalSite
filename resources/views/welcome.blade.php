@@ -60,7 +60,7 @@
                         </div> --}}
                 </div>
                 <div class="column is-4 right-image " data-aos="fade-left">
-                    <img class="is-rounded" src="/assets/img/avatar/avatar.jpg" alt="" />
+                    <img class="is-rounded" src="{{asset('/assets/img/avatar/avatar.jpg')}}" alt="" />
                 </div>
             </div>
         </div>

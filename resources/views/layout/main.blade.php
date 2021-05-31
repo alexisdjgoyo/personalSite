@@ -7,9 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Showcase - Personal Portfolio One Page Bulma Theme</title>
     <!-- Bulma Version 0.9.0-->
-    <link rel="stylesheet" href="/assets/css/bulma.css" />
-    <link rel="stylesheet" type="text/css" href="/assets/css/custom.css" />
-    <link rel="stylesheet" type="text/css" href="/assets/plugins/fontawesome/css/all.css" />
+    <link rel="stylesheet" href="{{asset('/assets/css/bulma.css')}}" />
+    <link rel="stylesheet" type="text/css" href="{{asset('/assets/css/custom.css')}}" />
+    <link rel="stylesheet" type="text/css" href="{{asset('/assets/plugins/fontawesome/css/all.css')}}" />
     {{-- <script src="https://kit.fontawesome.com/2828f7885a.js"
         integrity="sha384-WAsFbnLEQcpCk8lM1UTWesAf5rGTCvb2Y+8LvyjAAcxK1c3s5c0L+SYOgxvc6PWG" crossorigin="anonymous">
     </script> --}}
@@ -21,7 +21,7 @@
     <!-- Begin Preloader -->
     <div class="preloader-wrapper">
         <div class="preloader">
-            <img src="/assets/img/preloader.gif" alt="" />
+            <img src="{{asset('/assets/img/preloader.gif')}}" alt="" />
         </div>
     </div>
     <!-- End Preloader-->
@@ -38,7 +38,7 @@
     <!-- Begin Header -->
     <div class="header-wrapper" id="home">
         <!-- Begin Hero -->
-        <section class="hero is-large">
+        <section class="hero is-large" style="background: url({{asset('/assets/img/background.jpg')}})">
             <!-- Begin Mobile Nav -->
             <nav class="navbar is-transparent is-hidden-desktop">
                 <!-- Begin Burger Menu -->
@@ -146,8 +146,8 @@
     <!-- End Footer -->
 
     <!-- Scripts -->
-    <script src="/assets/js/jquery.js"></script>
-    <script src="/assets/js/custom.js"></script>
+    <script src="{{asset('/assets/js/jquery.js')}}"></script>
+    <script src="{{asset('/assets/js/custom.js')}}"></script>
 </body>
 
 </html>
