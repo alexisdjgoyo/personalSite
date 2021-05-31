@@ -46,7 +46,7 @@
     <!-- Begin Preloader -->
     <div class="preloader-wrapper">
         <div class="preloader">
-            <img src="{{asset('/assets/img/preloader.gif')}}" alt="" />
+            <img src="{{asset('/assets/img/preloader.gif')}}" alt="loading" loading="lazy" />
         </div>
     </div>
     <!-- End Preloader-->
