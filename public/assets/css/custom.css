@@ -107,8 +107,8 @@ html {
 }
 
 .main-content .section-dark.resume {
-    height: 400px;
-    padding-top: 100px;
+    height: 300px;
+    padding-top: 70px;
 }
 
 @media (max-width: 599px) {
@@ -220,7 +220,7 @@ html {
 }
 
 .main-content .section-light.contact {
-    padding: 200px;
+    padding: 70px;
 }
 
 .main-content .section-light.contact button {
@@ -241,7 +241,7 @@ html {
 }
 
 .main-content .section-color.services {
-    padding: 100px;
+    padding: 80px;
     background-color: #43485c;
     color: white;
 }
