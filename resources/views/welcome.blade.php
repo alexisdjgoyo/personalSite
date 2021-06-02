@@ -61,7 +61,8 @@
                         </div> --}}
                 </div>
                 <div class="column is-4 right-image " data-aos="fade-left">
-                    <img class="is-rounded" src="{{asset('/assets/img/avatar/avatar.jpg')}}" width="100%" height="100%" alt="" />
+                    <img class="is-rounded" src="{{asset('/assets/img/avatar/avatar.jpg')}}" width="100%" height="100%"
+                        alt="" />
                 </div>
             </div>
         </div>
@@ -90,7 +91,7 @@
     </div>
     <!-- Begin Services Content -->
     <div class="section-color services" id="my-work">
-    {{-- <div class="section-color services" id="services"> --}}
+        {{-- <div class="section-color services" id="services"> --}}
         <div class="container">
             <div class="columns is-multiline">
                 <div class="column is-12 about-me" data-aos="fade-in" data-aos-easing="linear">
@@ -106,8 +107,9 @@
                 <div class="columns is-12">
                     <div class="column is-4 has-text-centered" data-aos="fade-in" data-aos-easing="linear">
                         <i class="fas fa-laptop-code fa-3x"></i>
-                        <hr/>
-                        <h2 class="title has-text-centered section-title" style="padding-bottom: 0px">Desarrollo de aplicaciones Web</h2>
+                        <hr />
+                        <h2 class="title has-text-centered section-title" style="padding-bottom: 0px">Desarrollo de
+                            aplicaciones Web</h2>
                         {{-- <h2>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                             do eiusmod tempor incididunt ut labore et dolore magna aliqua
@@ -116,7 +118,8 @@
                     <div class="column is-4 has-text-centered" data-aos="fade-in" data-aos-easing="linear">
                         <i class="fas fa-mobile-alt fa-3x"></i>
                         <hr />
-                        <h2 class="title has-text-centered section-title" style="padding-bottom: 0px">Desarrollo de aplicaciones móvil/híbrido</h2>
+                        <h2 class="title has-text-centered section-title" style="padding-bottom: 0px">Desarrollo de
+                            aplicaciones móvil/híbrido</h2>
                         {{-- <h2>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                             do eiusmod tempor incididunt ut labore et dolore magna aliqua
@@ -125,7 +128,8 @@
                     <div class="column is-4 has-text-centered" data-aos="fade-in" data-aos-easing="linear">
                         <i class="fas fa-rocket fa-3x"></i>
                         <hr />
-                        <h2 class="title has-text-centered section-title" style="padding-bottom: 0px">Despliegue de aplicaciones web/móvil</h2>
+                        <h2 class="title has-text-centered section-title" style="padding-bottom: 0px">Despliegue de
+                            aplicaciones web/móvil</h2>
                         {{-- <h2>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                             do eiusmod tempor incididunt ut labore et dolore magna aliqua
@@ -231,6 +235,12 @@
     <div class="section-light contact" id="contact">
         <div class="container">
             <div class="columns is-multiline" data-aos="fade-in-up" data-aos-easing="linear">
+                <div class="column is-12" style="text-align: -webkit-center;">
+
+                    <img class="is-rounded favicon-contact center-image" src="{{asset('/assets/img/favicon.png')}}" width="150px" height="150px"
+                        alt="" />
+
+                </div>
                 <div class="column is-12 about-me">
                     <h1 class="title has-text-centered section-title">
                         Contacto

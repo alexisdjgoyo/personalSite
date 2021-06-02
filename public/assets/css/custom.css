@@ -186,8 +186,20 @@ html {
     box-shadow: 0 5px 20px rgba(14, 25, 80, 0.3);
 }
 
+
+.center-image {
+    border-radius: 50%;
+    margin: 20px;
+    box-shadow: 0 5px 20px rgba(14, 25, 80, 0.3);
+}
+
 @media (max-width: 599px) {
     .main-content .section-light.about-me .right-image img {
+        margin: auto;
+    }
+}
+@media (max-width: 599px) {
+    .center-image {
         margin: auto;
     }
 }
@@ -377,4 +389,9 @@ html {
     color: white;
     background: #1F2C6C;
     border: 1px solid white;
+}
+
+.favicon-contact {
+    height: 200px !important;
+    width: 200px !important;
 }
