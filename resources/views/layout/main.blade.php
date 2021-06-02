@@ -19,7 +19,7 @@
         .preloader-wrapper {
             height: 100%;
             width: 100%;
-            background: #1f2c6c;
+            background: #3A7F97;
             position: fixed;
             top: 0;
             left: 0;
