@@ -247,12 +247,12 @@
                         </h1>
                     </div>
                     <div class="column is-10 is-offset-1">
-                        <form action="{{route('send.email')}}" method="POST">
+                        <form action="{{ route('send.email') }}" method="POST">
                             @csrf
                             <div class="field">
                                 <label class="label">Nombre</label>
                                 <div class="control has-icons-left">
-                                    <input class="input" type="text" placeholder="" name="name" />
+                                    <input class="input" type="text" placeholder="" name="name" required />
                                     <span class="icon is-small is-left">
                                         <i class="fas fa-user"></i>
                                     </span>
@@ -261,7 +261,7 @@
                             <div class="field">
                                 <label class="label">Correo</label>
                                 <div class="control has-icons-left">
-                                    <input class="input" type="email" placeholder="" name="email" />
+                                    <input class="input" type="email" placeholder="" name="email" required />
                                     <span class="icon is-small is-left">
                                         <i class="fas fa-envelope"></i>
                                     </span>
@@ -270,7 +270,7 @@
                             <div class="field">
                                 <label class="label">Asunto</label>
                                 <div class="control has-icons-left">
-                                    <input class="input" type="text" placeholder="" name="subject" />
+                                    <input class="input" type="text" placeholder="" name="subject" required />
                                     <span class="icon is-small is-left">
                                         <i class="fas fa-user"></i>
                                     </span>
@@ -279,7 +279,7 @@
                             <div class="field">
                                 <label class="label">Mensaje</label>
                                 <div class="control">
-                                    <textarea class="textarea" placeholder="Textarea" name="message"></textarea>
+                                    <textarea class="textarea" placeholder="Textarea" name="message" required></textarea>
                                 </div>
                             </div>
                             <div class="field">
@@ -304,3 +304,26 @@
     </div>
     <!-- End Main Content -->
 @endsection
+
+@if (Session::has('email-success'))
+
+@push('js')
+<script>
+    $(document).ready(function() {
+        $( "#success-email" ).slideDown( "slow", function() {
+
+        });
+        setTimeout(function() {
+            $("#success-email").fadeOut(1500);
+        }, 3000);
+    });
+    </script>
+@endpush
+@endif
+
+
+@push('notification-success')
+    <div id="success-email" class="notification is-success">
+        <b>Email enviado exitosamente.</b>
+    </div>
+@endpush

@@ -9,7 +9,7 @@
         content="Hola, mi nombre es Alexis Goyo, Ingeniero en Informática y desarrollador web, bienvenido a mi sitio web donde te hablaré un poco sobre mi experiencia." />
 
     <title>Alexis Goyo | Hello World!</title>
-    <link rel="icon" type="image/png" href="{{asset('/assets/img/favicon.png')}}" />
+    <link rel="icon" type="image/png" href="{{ asset('/assets/img/favicon.png') }}" />
 
     <style type="text/css">
         body.preloader-site {
@@ -34,12 +34,17 @@
             transform: translate(-50%, -50%);
             width: 120px;
         }
+
     </style>
     <!-- Bulma Version 0.9.0-->
-    <link rel="preload" href="{{asset('/css/app.css')}}" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <link rel="preload" href="{{asset('/assets/css/bulma.css')}}" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <link rel="preload" href="{{asset('/assets/css/custom.css')}}" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <link rel="preload" href="{{asset('/assets/plugins/fontawesome/css/all.css')}}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="{{ asset('/css/app.css') }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="{{ asset('/assets/css/bulma.css') }}" as="style"
+        onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="{{ asset('/assets/css/custom.css') }}" as="style"
+        onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="{{ asset('/assets/plugins/fontawesome/css/all.css') }}" as="style"
+        onload="this.onload=null;this.rel='stylesheet'">
+
 </head>
 
 <body>
@@ -47,7 +52,7 @@
     <!-- Begin Preloader -->
     <div class="preloader-wrapper">
         <div class="preloader">
-            <img src="{{asset('/assets/img/preloader.gif')}}" alt="loading" loading="lazy" />
+            <img src="{{ asset('/assets/img/preloader.gif') }}" alt="loading" loading="lazy" />
         </div>
     </div>
     <!-- End Preloader-->
@@ -64,7 +69,7 @@
     <!-- Begin Header -->
     <div class="header-wrapper" id="home">
         <!-- Begin Hero -->
-        <section class="hero is-small" style="background: url({{asset('/assets/img/background.jpg')}});background-position: center;
+        <section class="hero is-small" style="background: url({{ asset('/assets/img/background.jpg') }});background-position: center;
         background-size: cover;">
             <!-- Begin Mobile Nav -->
             <nav class="navbar is-transparent is-hidden-desktop">
@@ -162,6 +167,8 @@
 
     @yield('content')
 
+    @stack('notification-success')
+
     <!-- Begin Footer -->
     <div class="footer">
         <p>
@@ -173,9 +180,10 @@
     <!-- End Footer -->
 
     <!-- Scripts -->
-    <script src="{{asset('/assets/js/jquery.js')}}"></script>
-    <script src="{{asset('/assets/js/custom.js')}}"></script>
+    <script src="{{ asset('/assets/js/jquery.js') }}"></script>
+    <script type="module" src="{{ asset('/assets/js/custom.js') }}"></script>
     {!! NoCaptcha::renderJs('es') !!}
+    @stack('js')
 </body>
 
 </html>
