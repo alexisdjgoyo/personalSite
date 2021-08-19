@@ -252,7 +252,7 @@
                             <div class="field">
                                 <label class="label">Nombre</label>
                                 <div class="control has-icons-left">
-                                    <input class="input" type="text" placeholder="" name="Name" />
+                                    <input class="input" type="text" placeholder="" name="name" />
                                     <span class="icon is-small is-left">
                                         <i class="fas fa-user"></i>
                                     </span>
@@ -261,7 +261,7 @@
                             <div class="field">
                                 <label class="label">Correo</label>
                                 <div class="control has-icons-left">
-                                    <input class="input" type="email" placeholder="" name="Email" />
+                                    <input class="input" type="email" placeholder="" name="email" />
                                     <span class="icon is-small is-left">
                                         <i class="fas fa-envelope"></i>
                                     </span>
@@ -270,7 +270,7 @@
                             <div class="field">
                                 <label class="label">Asunto</label>
                                 <div class="control has-icons-left">
-                                    <input class="input" type="text" placeholder="" name="Name" />
+                                    <input class="input" type="text" placeholder="" name="subject" />
                                     <span class="icon is-small is-left">
                                         <i class="fas fa-user"></i>
                                     </span>
@@ -279,7 +279,7 @@
                             <div class="field">
                                 <label class="label">Mensaje</label>
                                 <div class="control">
-                                    <textarea class="textarea" placeholder="Textarea" name="Message"></textarea>
+                                    <textarea class="textarea" placeholder="Textarea" name="message"></textarea>
                                 </div>
                             </div>
                             <div class="field">
