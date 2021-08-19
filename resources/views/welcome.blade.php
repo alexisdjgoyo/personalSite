@@ -17,7 +17,7 @@
                         </p>
                         <br />
                         <p align="justify">
-                            &emsp;&emsp;Desde hace 2 años y medio me dedico al desarrollo de aplicaciones web y
+                            &emsp;&emsp;Desde hace 3 años me dedico al desarrollo de aplicaciones web y
                             móvil/híbrido utilizando tecnologías como: Angular, Ionic y Laravel.
                         </p>
                         <p align="justify">
