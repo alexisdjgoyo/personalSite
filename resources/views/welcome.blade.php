@@ -279,7 +279,8 @@
                             <div class="field">
                                 <label class="label">Mensaje</label>
                                 <div class="control">
-                                    <textarea class="textarea" placeholder="Textarea" name="message" required></textarea>
+                                    <textarea class="textarea" placeholder="Textarea" name="message"
+                                        required></textarea>
                                 </div>
                             </div>
                             <div class="field">
@@ -302,23 +303,42 @@
         </div>
         <!-- End Contact Content -->
     </div>
+    {{-- <div id="modal" class="modal">
+        <div class="modal-background"></div>
+        <div class="modal-card">
+            <header class="modal-card-head">
+                <p class="modal-card-title">Modal title</p>
+                <button class="delete" aria-label="close"></button>
+            </header>
+            <section class="modal-card-body">
+                <!-- Content ... -->
+            </section>
+            <footer class="modal-card-foot">
+                <button class="button is-success">Save changes</button>
+                <button class="modal-close" class="button">Cancel</button>
+            </footer>
+        </div>
+    </div>
+    <p>
+        <a class="button is-primary modal-button" data-target="#modal">Launch example modal</a>
+    </p> --}}
     <!-- End Main Content -->
 @endsection
 
 @if (Session::has('email-success'))
 
-@push('js')
-<script>
-    $(document).ready(function() {
-        $( "#success-email" ).slideDown( "slow", function() {
+    @push('js')
+        <script>
+            $(document).ready(function() {
+                $("#success-email").slideDown("slow", function() {
 
-        });
-        setTimeout(function() {
-            $("#success-email").fadeOut(1500);
-        }, 3000);
-    });
-    </script>
-@endpush
+                });
+                setTimeout(function() {
+                    $("#success-email").fadeOut(1500);
+                }, 3000);
+            });
+        </script>
+    @endpush
 @endif
 
 
@@ -326,4 +346,23 @@
     <div id="success-email" class="notification is-success">
         <b>Email enviado exitosamente.</b>
     </div>
+@endpush
+
+@push('js')
+    <script>
+        $(document).ready(function() {
+
+            $(".modal-button").click(function() {
+                var target = $(this).data("target");
+                $("html").addClass("is-clipped");
+                $(target).addClass("is-active");
+            });
+
+            $(".modal-close").click(function() {
+                $("html").removeClass("is-clipped");
+                $(this).parent().removeClass("is-active");
+            });
+
+        });
+    </script>
 @endpush

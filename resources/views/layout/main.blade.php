@@ -192,7 +192,7 @@
     <!-- End Footer -->
 
     <!-- Scripts -->
-    <script src="{{ asset('/assets/js/jquery.js') }}"></script>
+    <script src="{{ mix('js/app.js') }}"></script>
     <script type="module" src="{{ asset('/assets/js/custom.js') }}"></script>
     {!! NoCaptcha::renderJs('es') !!}
     @stack('js')
