@@ -52,8 +52,6 @@
     <link rel="preload" href="{{ asset('/css/app.css') }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <link rel="preload" href="{{ asset('/assets/css/bulma.css') }}" as="style"
         onload="this.onload=null;this.rel='stylesheet'">
-    <link rel="preload" href="{{ asset('/assets/css/custom.css') }}" as="style"
-        onload="this.onload=null;this.rel='stylesheet'">
     <link rel="preload" href="{{ asset('/assets/plugins/fontawesome/css/all.css') }}" as="style"
         onload="this.onload=null;this.rel='stylesheet'">
 
@@ -193,7 +191,6 @@
 
     <!-- Scripts -->
     <script src="{{ mix('js/app.js') }}"></script>
-    <script type="module" src="{{ asset('/assets/js/custom.js') }}"></script>
     {!! NoCaptcha::renderJs('es') !!}
     @stack('js')
 </body>
