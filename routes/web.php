@@ -16,11 +16,13 @@ use App\Http\Controllers\AdminController;
 
 Route::get('/', function () {
     return view('welcome');
-});
+})->name('home');
 
 Route::post('sendmail', [MailController::class, 'send'])->name('send.email');
 
 
-Route::prefix('admin')->group(function () {
+Route::prefix('admin')->middleware(['auth'])->group(function () {
     Route::get('', [AdminController::class, 'index'])->name('admin.dashboard');
 });
+
+require __DIR__.'/auth.php';

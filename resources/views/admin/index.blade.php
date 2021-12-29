@@ -52,10 +52,14 @@
               <span>Messages</span>
             </a>
             <hr class="navbar-divider">
-            <a class="navbar-item">
+            <form method="POST" action="{{ route('logout') }}">
+                @csrf
+            <a class="navbar-item" onclick="event.preventDefault();
+            this.closest('form').submit();">
               <span class="icon"><i class="mdi mdi-logout"></i></span>
               <span>Log Out</span>
             </a>
+            </form>
           </div>
         </div>
         <div class="navbar-item has-dropdown has-dropdown-with-icons has-divider has-user-avatar is-hoverable">
@@ -80,20 +84,28 @@
               <span>Messages</span>
             </a>
             <hr class="navbar-divider">
-            <a class="navbar-item">
+            <form method="POST" action="{{ route('logout') }}">
+                @csrf
+            <a class="navbar-item" onclick="event.preventDefault();
+            this.closest('form').submit();">
               <span class="icon"><i class="mdi mdi-logout"></i></span>
               <span>Log Out</span>
             </a>
+            </form>
           </div>
         </div>
         <a href="https://justboil.me/bulma-admin-template/one-html" title="About" class="navbar-item has-divider is-desktop-icon-only">
           <span class="icon"><i class="mdi mdi-help-circle-outline"></i></span>
           <span>About</span>
         </a>
-        <a title="Log out" class="navbar-item is-desktop-icon-only">
+        <form method="POST" action="{{ route('logout') }}">
+            @csrf
+            <a title="Log out" class="navbar-item is-desktop-icon-only" style="height:100%;" onclick="event.preventDefault();
+        this.closest('form').submit();">
           <span class="icon"><i class="mdi mdi-logout"></i></span>
           <span>Log out</span>
         </a>
+    </form>
       </div>
     </div>
   </nav>

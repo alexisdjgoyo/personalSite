@@ -1,8 +1,10 @@
 require('./bootstrap');
 
+import Alpine from 'alpinejs';
 
-// Get that hamburger menu cookin' //
+window.Alpine = Alpine;
 
+Alpine.start();
 $(document).ready(function() {
 
     // Check for click events on the navbar burger icon
@@ -68,3 +70,4 @@ $(window).on("load", function () {
     var Body = $("body");
     Body.addClass("preloader-site");
 });
+
