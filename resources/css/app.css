@@ -420,3 +420,14 @@ html {
         width: 40%;
     }
 }
+
+.post-card > .card-content > .content {
+    margin-bottom: 0;
+    height: 175px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: inline-block;
+}
+.post-card{
+    height: 655px;
+}

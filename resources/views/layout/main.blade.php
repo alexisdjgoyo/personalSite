@@ -149,8 +149,11 @@
                     <div class="columns">
                         <div class="column is-12 hero-menu-desktop has-text-centered">
                             <ul>
-                                <li class="is-active" id="home-link">
+                                <li class="{{Request::is('home') ? 'is-active' : ''}}" id="home-link">
                                     <a href="/">Inicio</a>
+                                </li>
+                                <li class="{{Request::is('blog') ? 'is-active' : ''}}">
+                                    <a href="/blog">Blog</a>
                                 </li>
                                 <li>
                                     <a href="#about-me">Sobre mí</a>
