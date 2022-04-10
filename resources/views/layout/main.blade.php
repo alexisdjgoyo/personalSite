@@ -178,7 +178,7 @@
     <!-- End Footer -->
 
     <!-- Scripts -->
-    <script async src="{{ mix('js/app.js') }}"></script>
+    <script src="{{ mix('js/app.js') }}"></script>
     {!! NoCaptcha::renderJs('es') !!}
     @stack('js')
 </body>
