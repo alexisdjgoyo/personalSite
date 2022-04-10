@@ -49,7 +49,7 @@
 
     </style>
     <!-- Bulma Version 0.9.0-->
-    <link rel="preload" href="{{ asset('/assets/css/bulma.css') }}" as="style"
+    <link rel="preload" href="{{ asset('/assets/css/bulma.min.css') }}" as="style"
         onload="this.onload=null;this.rel='stylesheet'">
     <link rel="preload" href="{{ asset('/css/app.css') }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <link rel="preload" href="{{ asset('/assets/plugins/fontawesome/css/all.css') }}" as="style"
