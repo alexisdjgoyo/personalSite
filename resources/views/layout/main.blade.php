@@ -183,7 +183,7 @@
 
     <!-- Scripts -->
     <script src="{{ mix('js/app.js') }}"></script>
-    {!! NoCaptcha::renderJs('es') !!}
+    {!! NoCaptcha::renderJs() !!}
     @stack('js')
 </body>
 
