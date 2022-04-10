@@ -35,6 +35,10 @@
             width: 120px;
         }
 
+        .social-buttons {
+            border-radius: 100% !important;
+        }
+
     </style>
     <!-- Bulma Version 0.9.0-->
     <link rel="preload" href="{{ asset('/css/app.css') }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
